@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: lineto-brown, Futura, sans-serif;
+}
+
+main {
+  background-image: url(https://corporate.comcast.com/media/img/original/2023/12/corporate_Universal-Kids-Resort-16x9-Right.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+h1,
+p {
+  /* padding: 0; */
+  margin: 0;
+}
+
+.bottom-main {
+  /* padding-top: 100px; */
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.bottom-main-paragraph {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.bottom-main-wrapper {
+  padding: 20px;
+  margin-top: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#search-icon {
+}
+
+.search-icon-wrapper {
+  display: none;
+}
+
+.bottom-main-text-wrapper {
+  display: none;
+  color: white;
+}
+
+.color-wrapper {
+  display: flex;
+}
+
+.color-wrapper > div {
+  flex: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+
+  nav:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .bottom-main-text-wrapper {
+    display: flex;
+  }
+
+  .bottom-main-text-wrapper > div {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid white;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .search-icon-wrapper {
+    display: flex;
+  }
+
+  .bottom-main-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 600px;
+  }
+
+  .bottom-main-paragraph {
+    width: 800px;
+    font-size: 2.2rem;
+  }
+}
